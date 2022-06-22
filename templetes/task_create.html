@@ -1,0 +1,10 @@
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+      <h1 class="h3 mb-3 fw-normal">Добавить задачу {{ task.title }}</h1>
+
+      <div class="form-floating">
+        <input type="first_name" name = "title" class="form-control" id="floatingInput" placeholder="написать задачу">
+      </div>
+        <div>
+             <button class="w-100 btn btn-lg btn-primary" style="margin-top: 3px;" type="submit">добавить {{ task.title }}</button>
+         </div>

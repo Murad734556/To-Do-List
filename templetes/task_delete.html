@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+          <h1 class="h3 mb-3 fw-normal">Удалить задачу {{ task.title }}</h1> -->
+            <div>
+                 <button class="w-100 btn btn-lg btn-primary" style="margin-top: 3px;" type="submit">удалить {{ task.title }}</button>
+             </div>
+</body>
+</html>
